@@ -1,5 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 import HomeLetterSpanWrapper from './HomeLetterSpanWrapper';
+
+const Title = styled.h1`
+    color: white;
+`;
 
 const hello = HomeLetterSpanWrapper('Hello!');
 const im = HomeLetterSpanWrapper("I'm");
@@ -10,14 +15,14 @@ const developer = HomeLetterSpanWrapper('Developer.');
 
 const HomeTitle = () => {
     return (
-        <h1 style={{ color: 'white' }}>
+        <Title>
             {hello}
             {im}
             {fname}
             {lname}
             {web}
             {developer}
-        </h1>
+        </Title>
     );
 };
 
