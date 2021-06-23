@@ -7,6 +7,7 @@ const AnimationCSS = css`
 `;
 
 const HomeLetterHoverAnimation = styled.span`
+    display: inline-block;
     ${(props) => (props.playingAnimation ? AnimationCSS : '')}
 `;
 
