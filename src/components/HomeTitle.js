@@ -4,6 +4,8 @@ import HomeLetterSpanWrapper from './HomeLetterSpanWrapper';
 
 const Title = styled.h1`
     color: white;
+    text-align: center;
+    padding: 1rem;
 `;
 
 const hello = HomeLetterSpanWrapper('Hello!');
