@@ -13,6 +13,9 @@ const OverflowContainer = styled.div`
 const Flex = styled.div`
     position: absolute;
     display: flex;
+    bottom: 50%;
+    width: 100%;
+    justify-content: center;
 `;
 
 const HomePage = () => {
