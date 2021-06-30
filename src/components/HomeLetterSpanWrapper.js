@@ -6,7 +6,6 @@ const HomeLetterSpanWrapper = (string) => {
     const letterArray = splitString.map((letter, index) => {
         return <HomeLetter key={index} char={letter}></HomeLetter>;
     });
-    letterArray.push(' ');
     return letterArray;
 };
 

@@ -8,6 +8,11 @@ const Title = styled.h1`
     padding: 1rem;
 `;
 
+const WordWrapper = styled.div`
+    display: inline-block;
+    margin-left: 8px;
+`;
+
 const hello = HomeLetterSpanWrapper('Hello!');
 const im = HomeLetterSpanWrapper("I'm");
 const fname = HomeLetterSpanWrapper('Humberto');
@@ -18,12 +23,12 @@ const developer = HomeLetterSpanWrapper('Developer.');
 const HomeTitle = () => {
     return (
         <Title>
-            {hello}
-            {im}
-            {fname}
-            {lname}
-            {web}
-            {developer}
+            <WordWrapper>{hello}</WordWrapper>
+            <WordWrapper> {im}</WordWrapper>
+            <WordWrapper>{fname}</WordWrapper>
+            <WordWrapper>{lname}</WordWrapper>
+            <WordWrapper>{web}</WordWrapper>
+            <WordWrapper>{developer}</WordWrapper>
         </Title>
     );
 };

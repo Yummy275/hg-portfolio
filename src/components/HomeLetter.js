@@ -7,7 +7,7 @@ const LetterHover = keyframes`
   }
 
   50% {
-      transform : translateY(30px) rotateY(210deg)
+      transform : translateY(35px) rotateY(230deg)
   }
 
   100% {
@@ -16,7 +16,7 @@ const LetterHover = keyframes`
 `;
 
 const HoverAnimationCSS = css`
-  animation ${LetterHover} .4s; 
+  animation ${LetterHover} .45s; 
 `;
 
 const LetterWrapper = styled.span`

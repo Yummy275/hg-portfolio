@@ -25,11 +25,11 @@ const HomePlanetsHolder = () => {
                 planetTitle="About Me"
             ></HomePlanet>
             <HomePlanet
-                planetImg={greenPlanet}
+                planetImg={redPlanet}
                 planetTitle="Projects"
             ></HomePlanet>
             <HomePlanet
-                planetImg={redPlanet}
+                planetImg={greenPlanet}
                 planetTitle="Contact"
             ></HomePlanet>
         </Container>
