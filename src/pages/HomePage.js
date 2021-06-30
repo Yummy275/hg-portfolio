@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import ScrollingBg from '../components/ScrollingBg';
 import HomeTitle from '../components/HomeTitle';
 import HomePlanetsHolder from '../components/HomePlanetsHolder';
+import ContentHider from '../components/ContentHider';
 import spaceBg from '../images/space-bg.png';
 
 const OverflowContainer = styled.div`
@@ -21,15 +22,27 @@ const Flex = styled.div`
     justify-content: center;
 `;
 
-const HomePage = () => {
+const HomePage = ({ changePageTo }) => {
+    const [isContentVisible, setIsContentVisible] = useState(true);
+
+    const hideContent = () => {
+        setIsContentVisible(false);
+    };
+
     return (
-        <OverflowContainer>
-            <ScrollingBg bg={spaceBg}></ScrollingBg>
-            <Flex>
-                <HomeTitle></HomeTitle>
-                <HomePlanetsHolder></HomePlanetsHolder>
-            </Flex>
-        </OverflowContainer>
+        <ContentHider isVisible={isContentVisible}>
+            <OverflowContainer>
+                <ScrollingBg bg={spaceBg}></ScrollingBg>
+
+                <Flex>
+                    <HomeTitle></HomeTitle>
+                    <HomePlanetsHolder
+                        hideHomePage={hideContent}
+                        changePageTo={changePageTo}
+                    ></HomePlanetsHolder>
+                </Flex>
+            </OverflowContainer>
+        </ContentHider>
     );
 };
 

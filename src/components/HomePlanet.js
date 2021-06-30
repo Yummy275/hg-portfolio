@@ -61,11 +61,12 @@ const PlanetTitle = styled.h2`
     }
 `;
 
-const HomePlanet = ({ planetImg, planetTitle }) => {
+const HomePlanet = ({ planetImg, planetTitle, clickHandler }) => {
     const [planetGrowBig, setPlanetGrowBig] = useState(false);
 
     const planetClick = () => {
         setPlanetGrowBig(true);
+        clickHandler();
     };
 
     return (
