@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const Container = styled.div`
@@ -24,6 +24,12 @@ const PlanetHover = keyframes`
     100%{
         transform: rotate(0);
     }
+`;
+
+const PlanetScaleContainer = styled.div`
+    transition: 0.3s ease-in;
+    transform: scale(${(props) => (props.isBig ? '6' : '1')});
+    z-index: ${(props) => (props.isBig ? '1' : 'initial')};
 `;
 
 const PlanetImg = styled.input`
@@ -56,13 +62,21 @@ const PlanetTitle = styled.h2`
 `;
 
 const HomePlanet = ({ planetImg, planetTitle }) => {
+    const [planetGrowBig, setPlanetGrowBig] = useState(false);
+
+    const planetClick = () => {
+        setPlanetGrowBig(true);
+    };
+
     return (
-        <Container>
-            <PlanetImg
-                type="image"
-                src={planetImg}
-                alt="planet-img"
-            ></PlanetImg>
+        <Container onClick={() => planetClick()}>
+            <PlanetScaleContainer isBig={planetGrowBig}>
+                <PlanetImg
+                    type="image"
+                    src={planetImg}
+                    alt="planet-img"
+                ></PlanetImg>
+            </PlanetScaleContainer>
             <PlanetTitle>{planetTitle}</PlanetTitle>
         </Container>
     );
