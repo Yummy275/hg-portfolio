@@ -6,7 +6,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 
 function App() {
-    const [activePage, setActivePage] = useState('home');
+    const [activePage, setActivePage] = useState('about');
 
     return (
         <div className="App">
