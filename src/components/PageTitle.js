@@ -27,7 +27,7 @@ const planetRoll = keyframes`
 `;
 
 const PlanetFadeShiftIn = styled.div`
-    animation: ${FadeShiftIn('18rem', '0')} 0.4s 0.5s ease-out forwards;
+    animation: ${FadeShiftIn('18rem', '0')} 0.5s 0.5s ease-out forwards;
     opacity: 0;
 `;
 
@@ -35,7 +35,8 @@ const PlanetImg = styled.img`
     width: 3.5rem;
     height: 3.5rem;
     margin-right: 0.5rem;
-    animation: ${planetRoll} 25s 1s linear infinite;
+    animation: ${planetRoll} 25s 1s ease infinite;
+    z-index: 1;
 `;
 
 const PageTitle = ({ title, planetImg }) => {

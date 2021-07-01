@@ -4,9 +4,8 @@ const PageContentBg = styled.div`
     width: 90%;
     max-width: 70rem;
     margin: 0 auto;
-    padding: 1rem;
     background-color: ${(props) => props.bgColor}eb;
-    min-height: calc(100vh - 2rem);
+    min-height: 100vh;
 `;
 
 export default PageContentBg;

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import FadeScaleIn from './FadeScaleIn';
+import FadeShiftIn from './FadeShiftIn';
 import headshot from '../images/headshot.jpg';
 import colors from '../util/colors';
 
@@ -18,6 +20,9 @@ const Container = styled.div`
 
 const Headshot = styled.img`
     width: 100%;
+    opacity: 0;
+    animation: ${FadeScaleIn} 0.6s 0.8s ease forwards;
+
     @media (min-width: 768px) {
         width: 16rem;
     }
@@ -45,6 +50,8 @@ const GreetingContainer = styled.div`
 
 const Greeting = styled.h2`
     color: white;
+    opacity: 0;
+    animation: ${FadeShiftIn('-20px', '10px')} 0.3s 1.3s ease forwards;
 `;
 
 const AboutGreeting = () => {

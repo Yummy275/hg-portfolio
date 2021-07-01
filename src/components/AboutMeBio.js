@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import FadeShiftIn from './FadeShiftIn';
 
 const Container = styled.div`
-    margin-top: 2rem;
-    padding: 1rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    opacity: 0;
+    animation: ${FadeShiftIn('-20px', '10px')} 0.3s 1.3s ease forwards;
 `;
 
 const Paragraph = styled.p`
