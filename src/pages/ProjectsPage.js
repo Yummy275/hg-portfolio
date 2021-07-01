@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PageBackground from '../components/PageBackground';
 import PageContentBg from '../components/PageContentBg';
 import redBg from '../images/red-bg.png';
+import ContentHider from '../components/ContentHider';
+
 import colors from '../util/colors';
 
-const AboutPage = () => {
+const ProjectsPage = () => {
+    const [isContentVisible, setIsContentVisible] = useState(false);
+
+    const hideContent = () => {
+        setIsContentVisible(false);
+    };
+
+    useEffect(() => {
+        setTimeout(() => setIsContentVisible(true), 100);
+    }, []);
+
     return (
-        <PageBackground bg={redBg}>
-            <PageContentBg bgColor={colors.redOne}></PageContentBg>
-        </PageBackground>
+        <ContentHider isVisible={isContentVisible}>
+            <PageBackground bg={redBg}>
+                <PageContentBg bgColor={colors.redOne}></PageContentBg>
+            </PageBackground>
+        </ContentHider>
     );
 };
 
-export default AboutPage;
+export default ProjectsPage;
