@@ -28,8 +28,8 @@ const PlanetHover = keyframes`
 
 const PlanetScaleContainer = styled.div`
     transition: 0.5s ease-in;
-    transform: scale(${(props) => (props.isBig ? '8' : '1')});
-    z-index: ${(props) => (props.isBig ? '1' : 'initial')};
+    transform: scale(${(props) => (props.isGrowingBig ? '8' : '1')});
+    z-index: ${(props) => (props.isGrowingBig ? '1' : 'initial')};
 `;
 
 const PlanetImg = styled.input`
@@ -71,7 +71,7 @@ const HomePlanet = ({ planetImg, planetTitle, clickHandler }) => {
 
     return (
         <Container onClick={() => planetClick()}>
-            <PlanetScaleContainer isBig={planetGrowBig}>
+            <PlanetScaleContainer isGrowingBig={planetGrowBig}>
                 <PlanetImg
                     type="image"
                     src={planetImg}
