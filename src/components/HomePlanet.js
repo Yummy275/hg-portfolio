@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
+import FadeIn from './FadeIn';
 
 const Container = styled.div`
     cursor: pointer;
@@ -54,6 +55,8 @@ const PlanetImg = styled.input`
 `;
 
 const PlanetTitle = styled.h2`
+    opacity: 0;
+    animation: ${FadeIn} 0.3s 1.1s ease-in forwards;
     color: white;
     margin-left: 0.5rem;
     @media (min-width: 768px) {

@@ -1,31 +1,17 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import HomePlanet from './HomePlanet';
 import bluePlanet from '../images/blue-planet.png';
 import greenPlanet from '../images/green-planet.png';
 import redPlanet from '../images/red-planet.png';
-
-const ScaleFadeIn = keyframes`
-    0%{
-        transform: scale(.3);
-        opacity: 0;
-    }
-    65%{
-        transform: scale(1.5);
-        opacity: 1;
-    }
-    100%{
-        transform: scale(1);
-        opacity: 1;
-    }
-`;
+import FadeShiftIn from './FadeShiftIn';
 
 const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    animation: ${ScaleFadeIn} 0.5s 0.5s ease-in forwards;
+    animation: ${FadeShiftIn('-40px', '0')} 0.5s 0.5s ease-out forwards;
     opacity: 0;
 
     @media (min-width: 768px) {
