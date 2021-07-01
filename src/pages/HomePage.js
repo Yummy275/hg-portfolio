@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ScrollingBg from '../components/ScrollingBg';
 import HomeTitle from '../components/HomeTitle';
@@ -23,11 +23,15 @@ const Flex = styled.div`
 `;
 
 const HomePage = ({ changePageTo }) => {
-    const [isContentVisible, setIsContentVisible] = useState(true);
+    const [isContentVisible, setIsContentVisible] = useState(false);
 
     const hideContent = () => {
         setIsContentVisible(false);
     };
+
+    useEffect(() => {
+        setTimeout(() => setIsContentVisible(true), 100);
+    }, []);
 
     return (
         <ContentHider isVisible={isContentVisible}>

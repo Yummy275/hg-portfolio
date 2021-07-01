@@ -27,8 +27,8 @@ const PlanetHover = keyframes`
 `;
 
 const PlanetScaleContainer = styled.div`
-    transition: 0.3s ease-in;
-    transform: scale(${(props) => (props.isBig ? '6' : '1')});
+    transition: 0.5s ease-in;
+    transform: scale(${(props) => (props.isBig ? '8' : '1')});
     z-index: ${(props) => (props.isBig ? '1' : 'initial')};
 `;
 

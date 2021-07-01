@@ -21,7 +21,7 @@ const Container = styled.div`
 const HomePlanetsHolder = ({ hideHomePage, changePageTo }) => {
     const planetClickHandler = (page) => {
         hideHomePage();
-        changePageTo(page);
+        setTimeout(() => changePageTo(page), 500);
     };
 
     return (
