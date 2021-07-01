@@ -1,27 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import PageBackground from '../components/PageBackground';
-import PageContentBg from '../components/PageContentBg';
+import React from 'react';
+import PageOutline from '../components/PageOutline';
 import greenBg from '../images/green-bg.png';
-import ContentHider from '../components/ContentHider';
+import greenPlanet from '../images/green-planet.png';
 import colors from '../util/colors';
 
 const ContactPage = () => {
-    const [isContentVisible, setIsContentVisible] = useState(false);
-
-    const hideContent = () => {
-        setIsContentVisible(false);
-    };
-
-    useEffect(() => {
-        setTimeout(() => setIsContentVisible(true), 100);
-    }, []);
-
     return (
-        <ContentHider isVisible={isContentVisible}>
-            <PageBackground bg={greenBg}>
-                <PageContentBg bgColor={colors.greenOne}></PageContentBg>
-            </PageBackground>
-        </ContentHider>
+        <PageOutline
+            bgImg={greenBg}
+            contentBgColor={colors.greenOne}
+            title="Contact"
+            titlePlanet={greenPlanet}
+        ></PageOutline>
     );
 };
 
