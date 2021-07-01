@@ -4,7 +4,13 @@ import PageContentBg from '../components/PageContentBg';
 import PageTitle from '../components/PageTitle';
 import ContentHider from '../components/ContentHider';
 
-const PageOutline = ({ bgImg, contentBgColor, title, titlePlanet }) => {
+const PageOutline = ({
+    bgImg,
+    contentBgColor,
+    title,
+    titlePlanet,
+    content,
+}) => {
     const [isContentVisible, setIsContentVisible] = useState(false);
 
     const hideContent = () => {
@@ -23,6 +29,7 @@ const PageOutline = ({ bgImg, contentBgColor, title, titlePlanet }) => {
                         title={title}
                         planetImg={titlePlanet}
                     ></PageTitle>
+                    {content}
                 </PageContentBg>
             </PageBackground>
         </ContentHider>
