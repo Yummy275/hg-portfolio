@@ -12,43 +12,43 @@ import bootIcon from '../images/tech_logos/bootstrap.png';
 const techLogos = {
     react: {
         name: 'React',
-        icon: { reactIcon },
+        icon: `${reactIcon}`,
     },
     css: {
         name: 'Css',
-        icon: { cssIcon },
+        icon: `${cssIcon}`,
     },
     fb: {
         name: 'Firebase',
-        icon: { fbIcon },
+        icon: `${fbIcon}`,
     },
     html: {
         name: 'HTML',
-        icon: { htmlIcon },
+        icon: `${htmlIcon}`,
     },
     phaser: {
         name: 'Phaser',
-        icon: { phaserIcon },
+        icon: `${phaserIcon}`,
     },
     express: {
         name: 'Express JS',
-        icon: { nodeIcon },
+        icon: `${nodeIcon}`,
     },
     styled: {
         name: 'Styled-Components',
-        icon: { styledIcon },
+        icon: `${styledIcon}`,
     },
     tailwind: {
         name: 'Tailwind',
-        icon: { twIcon },
+        icon: `${twIcon}`,
     },
     js: {
         name: 'Javascript',
-        icon: { jsIcon },
+        icon: `${jsIcon}`,
     },
     boot: {
         name: 'Bootstrap',
-        icon: { bootIcon },
+        icon: `${bootIcon}`,
     },
 };
 

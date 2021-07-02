@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import FadeShiftIn from './FadeShiftIn';
+import AboutTechIcons from './AboutTechIcons';
 
 const Container = styled.div`
     margin-top: 1rem;
@@ -38,6 +39,7 @@ const AboutMeBio = () => {
                 JavaScript, front end frameworks, working with API's, express
                 js, and plenty more.
             </Paragraph>
+            <AboutTechIcons></AboutTechIcons>
             <Paragraph>
                 Now I wish to take my skills and become a valuable asset to
                 you/your organization. Whether you're looking for a website or
