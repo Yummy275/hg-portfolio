@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useInView } from 'react-intersection-observer';
 
@@ -12,9 +12,11 @@ const Icon = styled.img`
     width: 3.2rem;
     transition: all 0.3s ease;
 
-    opacity: ${(props) => (props.visible ? '1' : '0')};
+    opacity: ${(props) => (props.visible && props.timeTrigger ? '1' : '0')};
     transform: ${(props) =>
-        props.visible ? 'scale(1) rotate(0)' : 'scale(.1) rotate(-360deg)'};
+        props.visible && props.timeTrigger
+            ? 'scale(1) rotate(0)'
+            : 'scale(.1) rotate(-360deg)'};
     @media (min-width: 640px) {
         height: 4rem;
         width: 4rem;
@@ -33,18 +35,29 @@ const IconName = styled.p`
     transition: all 0.3s ease;
     color: white;
     font-style: italic;
-    opacity: ${(props) => (props.visible ? '1' : '0')};
+    opacity: ${(props) => (props.visible && props.timeTrigger ? '1' : '0')};
 `;
 
 const AboutTechIcon = ({ name, icon }) => {
+    const [timeTrigger, setTimeTrigger] = useState(false);
+
+    setTimeout(() => setTimeTrigger(true), 1500);
+
     const [iconDiv, inView] = useInView({
         threshold: 0.8,
     });
 
     return (
         <IconContainer ref={iconDiv}>
-            <Icon src={icon} alt={name} visible={inView}></Icon>
-            <IconName visible={inView}>{name}</IconName>
+            <Icon
+                src={icon}
+                alt={name}
+                visible={inView}
+                timeTrigger={timeTrigger}
+            ></Icon>
+            <IconName visible={inView} timeTrigger={timeTrigger}>
+                {name}
+            </IconName>
         </IconContainer>
     );
 };
