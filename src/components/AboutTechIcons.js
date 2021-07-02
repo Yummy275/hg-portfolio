@@ -4,7 +4,8 @@ import techIcons from '../util/aboutTechIcons';
 
 const IconsContainer = styled.div`
     width: 90%;
-    max-width: 540px;
+    margin: 0 auto;
+    max-width: 47rem;
     display: flex;
     flex-wrap: wrap;
     align-items: space-evenly;
@@ -13,12 +14,12 @@ const IconsContainer = styled.div`
 
 const IconContainer = styled.div`
     text-align: center;
+    padding: 1rem;
 `;
 
 const Icon = styled.img`
     height: 3.2rem;
     width: 3.2rem;
-    margin: 0.5rem;
 
     @media (min-width: 640px) {
         height: 4rem;
@@ -36,7 +37,7 @@ const Icon = styled.img`
 
 const IconName = styled.p`
     color: white;
-    margin-top: 0.5rem;
+    font-style: italic;
 `;
 
 const icons = [];

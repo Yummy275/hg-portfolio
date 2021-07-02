@@ -15,7 +15,7 @@ const techLogos = {
         icon: `${reactIcon}`,
     },
     css: {
-        name: 'Css',
+        name: 'CSS',
         icon: `${cssIcon}`,
     },
     fb: {
