@@ -35,7 +35,7 @@ const PlanetImg = styled.img`
     width: 3.5rem;
     height: 3.5rem;
     margin-right: 0.5rem;
-    animation: ${planetRoll} 25s 1s ease infinite;
+    animation: ${planetRoll} 25s 1.2s linear infinite;
     z-index: 1;
 `;
 

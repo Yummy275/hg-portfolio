@@ -4,7 +4,7 @@ import techIcons from '../util/aboutTechIcons';
 
 const IconsContainer = styled.div`
     width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto;
     max-width: 47rem;
     display: flex;
     flex-wrap: wrap;
