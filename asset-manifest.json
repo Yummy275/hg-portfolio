@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/hg-portfolio/static/css/main.f83fc7f8.chunk.css",
+    "main.js": "/hg-portfolio/static/js/main.6096ca86.chunk.js",
+    "main.js.map": "/hg-portfolio/static/js/main.6096ca86.chunk.js.map",
+    "runtime-main.js": "/hg-portfolio/static/js/runtime-main.f03b20bd.js",
+    "runtime-main.js.map": "/hg-portfolio/static/js/runtime-main.f03b20bd.js.map",
+    "static/js/2.ddabdd8b.chunk.js": "/hg-portfolio/static/js/2.ddabdd8b.chunk.js",
+    "static/js/2.ddabdd8b.chunk.js.map": "/hg-portfolio/static/js/2.ddabdd8b.chunk.js.map",
+    "index.html": "/hg-portfolio/index.html",
+    "static/css/main.f83fc7f8.chunk.css.map": "/hg-portfolio/static/css/main.f83fc7f8.chunk.css.map",
+    "static/js/2.ddabdd8b.chunk.js.LICENSE.txt": "/hg-portfolio/static/js/2.ddabdd8b.chunk.js.LICENSE.txt",
+    "static/media/astroWave.5309ea68.gif": "/hg-portfolio/static/media/astroWave.5309ea68.gif",
+    "static/media/blue-bg.1321c8a4.png": "/hg-portfolio/static/media/blue-bg.1321c8a4.png",
+    "static/media/bootstrap.0b914c5e.png": "/hg-portfolio/static/media/bootstrap.0b914c5e.png",
+    "static/media/coin-watcher.26fc98bc.png": "/hg-portfolio/static/media/coin-watcher.26fc98bc.png",
+    "static/media/falcos-home.f688237a.png": "/hg-portfolio/static/media/falcos-home.f688237a.png",
+    "static/media/firebase.60bf6733.png": "/hg-portfolio/static/media/firebase.60bf6733.png",
+    "static/media/green-bg.e0dc675f.png": "/hg-portfolio/static/media/green-bg.e0dc675f.png",
+    "static/media/green-planet.9cb38554.png": "/hg-portfolio/static/media/green-planet.9cb38554.png",
+    "static/media/headshot.6428b876.jpg": "/hg-portfolio/static/media/headshot.6428b876.jpg",
+    "static/media/html5.ff3cf75e.png": "/hg-portfolio/static/media/html5.ff3cf75e.png",
+    "static/media/nodejs.0b1d5449.png": "/hg-portfolio/static/media/nodejs.0b1d5449.png",
+    "static/media/phaser.c3b32abe.png": "/hg-portfolio/static/media/phaser.c3b32abe.png",
+    "static/media/react.f02dc154.png": "/hg-portfolio/static/media/react.f02dc154.png",
+    "static/media/red-bg.d76fb5d2.png": "/hg-portfolio/static/media/red-bg.d76fb5d2.png",
+    "static/media/sc.a307cc7b.png": "/hg-portfolio/static/media/sc.a307cc7b.png",
+    "static/media/space-bg.3562492b.png": "/hg-portfolio/static/media/space-bg.3562492b.png",
+    "static/media/tailwind.f6465245.png": "/hg-portfolio/static/media/tailwind.f6465245.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f03b20bd.js",
+    "static/js/2.ddabdd8b.chunk.js",
+    "static/css/main.f83fc7f8.chunk.css",
+    "static/js/main.6096ca86.chunk.js"
+  ]
+}
