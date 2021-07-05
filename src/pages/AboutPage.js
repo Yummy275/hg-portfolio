@@ -13,7 +13,7 @@ const pageContent = (
     </>
 );
 
-const AboutPage = () => {
+const AboutPage = ({ changePage, activePage }) => {
     return (
         <PageOutline
             bgImg={blueBg}
@@ -21,6 +21,8 @@ const AboutPage = () => {
             title="About Me"
             titlePlanet={bluePlanet}
             content={pageContent}
+            changePage={changePage}
+            activePage={activePage}
         ></PageOutline>
     );
 };

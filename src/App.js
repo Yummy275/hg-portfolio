@@ -14,15 +14,24 @@ function App() {
                 <HomePage changePageTo={setActivePage}></HomePage>
             ) : activePage === 'about' ? (
                 <>
-                    <AboutPage></AboutPage>
+                    <AboutPage
+                        activePage={activePage}
+                        changePage={setActivePage}
+                    ></AboutPage>
                 </>
             ) : activePage === 'projects' ? (
                 <>
-                    <ProjectsPage></ProjectsPage>
+                    <ProjectsPage
+                        activePage={activePage}
+                        changePage={setActivePage}
+                    ></ProjectsPage>
                 </>
             ) : activePage === 'contact' ? (
                 <>
-                    <ContactPage></ContactPage>
+                    <ContactPage
+                        activePage={activePage}
+                        changePage={setActivePage}
+                    ></ContactPage>
                 </>
             ) : (
                 ''

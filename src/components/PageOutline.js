@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PageBackground from '../components/PageBackground';
 import PageContentBg from '../components/PageContentBg';
+import Navbar from '../components/Navbar';
 import PageTitle from '../components/PageTitle';
 import ContentHider from '../components/ContentHider';
 
@@ -10,6 +11,8 @@ const PageOutline = ({
     title,
     titlePlanet,
     content,
+    changePage,
+    activePage,
 }) => {
     const [isContentVisible, setIsContentVisible] = useState(false);
 
@@ -25,6 +28,10 @@ const PageOutline = ({
         <ContentHider isVisible={isContentVisible}>
             <PageBackground bg={bgImg}>
                 <PageContentBg bgColor={contentBgColor}>
+                    <Navbar
+                        changePage={changePage}
+                        activePage={activePage}
+                    ></Navbar>
                     <PageTitle
                         title={title}
                         planetImg={titlePlanet}
