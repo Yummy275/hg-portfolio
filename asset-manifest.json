@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hg-portfolio/static/css/main.f83fc7f8.chunk.css",
-    "main.js": "/hg-portfolio/static/js/main.6096ca86.chunk.js",
-    "main.js.map": "/hg-portfolio/static/js/main.6096ca86.chunk.js.map",
+    "main.js": "/hg-portfolio/static/js/main.f7934364.chunk.js",
+    "main.js.map": "/hg-portfolio/static/js/main.f7934364.chunk.js.map",
     "runtime-main.js": "/hg-portfolio/static/js/runtime-main.f03b20bd.js",
     "runtime-main.js.map": "/hg-portfolio/static/js/runtime-main.f03b20bd.js.map",
     "static/js/2.ddabdd8b.chunk.js": "/hg-portfolio/static/js/2.ddabdd8b.chunk.js",
@@ -10,6 +10,7 @@
     "index.html": "/hg-portfolio/index.html",
     "static/css/main.f83fc7f8.chunk.css.map": "/hg-portfolio/static/css/main.f83fc7f8.chunk.css.map",
     "static/js/2.ddabdd8b.chunk.js.LICENSE.txt": "/hg-portfolio/static/js/2.ddabdd8b.chunk.js.LICENSE.txt",
+    "static/media/AXEI-home.53a18d3b.png": "/hg-portfolio/static/media/AXEI-home.53a18d3b.png",
     "static/media/astroWave.5309ea68.gif": "/hg-portfolio/static/media/astroWave.5309ea68.gif",
     "static/media/blue-bg.1321c8a4.png": "/hg-portfolio/static/media/blue-bg.1321c8a4.png",
     "static/media/bootstrap.0b914c5e.png": "/hg-portfolio/static/media/bootstrap.0b914c5e.png",
@@ -32,6 +33,6 @@
     "static/js/runtime-main.f03b20bd.js",
     "static/js/2.ddabdd8b.chunk.js",
     "static/css/main.f83fc7f8.chunk.css",
-    "static/js/main.6096ca86.chunk.js"
+    "static/js/main.f7934364.chunk.js"
   ]
 }
