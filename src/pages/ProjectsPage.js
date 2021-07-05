@@ -6,6 +6,7 @@ import redBg from '../images/red-bg.png';
 import redPlanet from '../images/red-planet.png';
 import falcosImg from '../images/falcos-home.png';
 import coinWatcherImg from '../images/coin-watcher.png';
+import axeiImg from '../images/AXEI-home.png';
 import colors from '../util/colors';
 
 const ProjectsContainer = styled.div`
@@ -29,6 +30,14 @@ const content = (
             repoLink="https://github.com/Yummy275/coin-watcher"
             tech="React and Tailwind"
             bio="Crypto portfolio tracker. Add crypto currency and hold amounts to see current value. Gets data from API."
+        ></ProjectCard>
+        <ProjectCard
+            picture={axeiImg}
+            title="AXEI"
+            link="https://yummy275.github.io/axei-webpage/"
+            repoLink="https://github.com/Yummy275/axei-webpage"
+            tech="React and Styled-Components"
+            bio="Mock site for a tech company. Big and simple."
         ></ProjectCard>
     </ProjectsContainer>
 );
