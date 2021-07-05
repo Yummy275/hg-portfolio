@@ -35,7 +35,7 @@ const ContactInfo = () => {
                 </Link>
             </ContactOption>
             <ContactOption>
-                {`LinkinedIn: `}
+                {`LinkedIn: `}
                 <Link
                     target="_blank"
                     href="https://www.linkedin.com/in/humberto-gonzalez275/"
