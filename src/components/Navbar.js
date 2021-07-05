@@ -12,20 +12,26 @@ const Container = styled.div`
 `;
 
 const NavOption = styled.span`
+    cursor: pointer;
     color: ${(props) =>
         props.activePage === props.navPage ? props.activeColor : 'white'};
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0 0.5rem;
+    transition: transform 0.3s ease;
+
+    :hover {
+        transform: scale(1.2);
+    }
 `;
 
-const Navbar = ({ changePage, activePage }) => {
+const Navbar = ({ changingPage, activePage }) => {
     return (
         <Container>
-            <NavOption onClick={() => changePage('home')} navPage="home">
+            <NavOption onClick={() => changingPage('home')} navPage="home">
                 Home
             </NavOption>
             <NavOption
-                onClick={() => changePage('about')}
+                onClick={() => changingPage('about')}
                 activePage={activePage}
                 navPage="about"
                 activeColor={colors.blueThr}
@@ -33,7 +39,7 @@ const Navbar = ({ changePage, activePage }) => {
                 About
             </NavOption>
             <NavOption
-                onClick={() => changePage('projects')}
+                onClick={() => changingPage('projects')}
                 activePage={activePage}
                 navPage="projects"
                 activeColor={colors.redThr}
@@ -41,7 +47,7 @@ const Navbar = ({ changePage, activePage }) => {
                 Projects
             </NavOption>
             <NavOption
-                onClick={() => changePage('contact')}
+                onClick={() => changingPage('contact')}
                 activePage={activePage}
                 navPage="contact"
                 activeColor={colors.greenThr}

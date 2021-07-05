@@ -24,12 +24,17 @@ const PageOutline = ({
         setTimeout(() => setIsContentVisible(true), 100);
     }, []);
 
+    const changingPage = (page) => {
+        hideContent();
+        setTimeout(() => changePage(page), 500);
+    };
+
     return (
         <ContentHider isVisible={isContentVisible}>
             <PageBackground bg={bgImg}>
                 <PageContentBg bgColor={contentBgColor}>
                     <Navbar
-                        changePage={changePage}
+                        changingPage={changingPage}
                         activePage={activePage}
                     ></Navbar>
                     <PageTitle
