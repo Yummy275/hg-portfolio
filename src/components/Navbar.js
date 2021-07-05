@@ -13,6 +13,8 @@ const Container = styled.div`
 
 const NavOption = styled.span`
     cursor: pointer;
+    pointer-events: ${(props) =>
+        props.activePage === props.navPage ? 'none' : 'auto'};
     color: ${(props) =>
         props.activePage === props.navPage ? props.activeColor : 'white'};
     font-size: 1rem;
